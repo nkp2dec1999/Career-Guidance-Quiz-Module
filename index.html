@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Module</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ba2cf90f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section>
+
+        <header class="sign-in">
+
+            <h1>Enter the details to begin your test</h1>
+
+            <form id="form-1">
+
+                <input type="text" name="username" placeholder="Enter your name" autofocus>
+
+                <input type="text" name="userid" placeholder="Enter your Email-id" required>
+
+                <button type="button" name="reg-btn">Submit <i class="fas fa-caret-right"></i> </button>
+
+            </form>
+
+        </header>
+
+        <main>
+
+            <div class="head">
+                <ul>
+                    <li class="userid"></li>
+                    <li class="username"></li>
+                    <li class="page"></li>
+                </ul>
+                <center><div style="font-size: 20px">Time Left - <span style="color: red" id="time">01:30</span></div>
+                </center>
+
+            </div>
+
+
+
+            <div class="que-cont cont-1">
+
+                <div class="que que-1">
+                    <h1> &nbsp;<span>Q1-</span> What is the compound interest on Rs. 2500 for 2 years at rate of interest &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;4% per annum?</h1>
+                    <ul>
+                        <li><button id="x" onclick="right_selection(value)" value="5">204</button></li>
+                        <li><button onclick="wrong_selection()">180</button></li>
+                        <li><button onclick="wrong_selection()">210</button></li>
+                        <li><button onclick="wrong_selection()">220</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-2">
+                    <h1> &nbsp;<span>Q2-</span> A mother is twice as old as her son. If 20 years ago, the age of the mother &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;was 10 times the age of the son, what is the present age of the mother??</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">38</button></li>
+                        <li><button onclick="wrong_selection()">40</button></li>
+                        <li><button onclick="wrong_selection()">43</button></li>
+                        <li><button onclick="right_selection(value)" value="4">45</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-3">
+                    <h1> &nbsp;<span>Q3-</span>  40 % of 280 =?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">120</button></li>
+                        <li><button onclick="wrong_selection()">115</button></li>
+                        <li><button onclick="wrong_selection()">116</button></li>
+                        <li><button onclick="right_selection(4)" value="4">112</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-4">
+                    <h1> &nbsp;<span>Q4-</span> A shopkeeper sold an article for Rs. 2500. If the cost price of the article &nbsp;&nbsp;&nbsp;&nbsp; is 2000, find the profit percent?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">23</button></li>
+                        <li><button onclick="right_selection(2)" value="2">25</button></li>
+                        <li><button onclick="wrong_selection()">27</button></li>
+                        <li><button onclick="wrong_selection()">29</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-5">
+                    <h1> &nbsp;<span>Q5-</span> What is the average of first five multiples of 12?   </h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">42</button></li>
+                        <li><button onclick="wrong_selection()">40</button></li>
+                        <li><button onclick="wrong_selection()">48</button></li>
+                        <li><button onclick="right_selection(7)" value="7days">36</button></li>
+                    </ul>
+                    <button class="sec-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+            <div class="que-cont cont-2">
+
+                <div class="que que-6">
+                    <h1> &nbsp;<span>Q6-</span> John is the _______ runner in our class.</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">fast</button></li>
+                        <li><button onclick="wrong_selection()">faster</button></li>
+                        <li><button onclick="right_selection(12)" value="12months">fastest</button></li>
+                        <li><button onclick="wrong_selection()">fasties</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-7">
+                    <h1> &nbsp;<span>Q7-</span> I will _______ up at five tomorrow.</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">getting</button></li>
+                        <li><button onclick="wrong_selection()">gets</button></li>
+                        <li><button onclick="wrong_selection()">got</button></li>
+                        <li><button onclick="right_selection(4)" value="4years">get</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-8">
+                    <h1> &nbsp;<span>Q8-</span> Is there ______ water in the glass?</h1>
+                    <ul>
+                        <li><button onclick="right_selection(0)" value="0">any</button></li>
+                        <li><button onclick="wrong_selection()">many</button></li>
+                        <li><button onclick="wrong_selection()">some</button></li>
+                        <li><button onclick="wrong_selection()">much</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-9">
+                    <h1> &nbsp;<span>Q9-</span> There ______ many pens on the table.</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">an</button></li>
+                        <li><button onclick="wrong_selection()">is</button></li>
+                        <li><button onclick="wrong_selection()">a</button></li>
+                        <li><button onclick="right_selection(50)" value="50">are</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-10">
+                    <h1> &nbsp;<span>Q10-</span> Jan _______ her diary everyday.</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">wrote</button></li>
+                        <li><button onclick="wrong_selection()">written</button></li>
+                        <li><button onclick="right_selection(60)" value="60">writes</button></li>
+                        <li><button onclick="wrong_selection()">write</button></li>
+                    </ul>
+                    <button class="third-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+            <div class="que-cont cont-3">
+
+                <div class="que que-11">
+                    <h1> &nbsp;<span>Q11-</span> Lime water is?</h1>
+                    <ul>
+                        <li><button onclick="right_selection(24)" value="24">Ca(OH)2</button></li>
+                        <li><button onclick="wrong_selection()">CaO</button></li>
+                        <li><button onclick="wrong_selection()">CaCO3</button></li>
+                        <li><button onclick="wrong_selection()">CaCl2</button></li>
+                    </ul>
+                </div>
+
+                <div class="que que-12">
+                    <h1> &nbsp;<span>Q12-</span> Which of the folloing does not form an acidic salt?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Phosphouric Acid</button></li>
+                        <li><button onclick="right_selection(2)" value="2">Carbonic Acid</button></li>
+                        <li><button onclick="wrong_selection()">Hydrocloric Acid</button></li>
+                        <li><button onclick="wrong_selection()">Sulfuric Acid/button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-13">
+                    <h1> &nbsp;<span>Q13-</span> Chemically Rust is?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Hydrogen Ferrous</button></li>
+                        <li><button onclick="wrong_selection()">only Ferric oxide</button></li>
+                        <li><button onclick="right_selection(12)" value="12">Hydrated Feric oxide</button></li>
+                        <li><button onclick="wrong_selection()">none of these</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-14">
+                    <h1> &nbsp;<span>Q14-</span> Which one of the folloing is acidic?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Lemon Juice</button></li>
+                        <li><button onclick="wrong_selection()">Milk</button></li>
+                        <li><button onclick="wrong_selection()">Tomatoes</button></li>
+                        <li><button onclick="right_selection(20)" value="20">all</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-15">
+                    <h1> &nbsp;<span>Q15-</span> The by product of soap is?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">isoprene</button></li>
+                        <li><button onclick="wrong_selection()">butene</button></li>
+                        <li><button onclick="wrong_selection()">ethylene glycol</button></li>
+                        <li><button onclick="right_selection(10)" value="10">glycerol</button></li>
+                    </ul>
+                    <button class="fourth-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                </div>
+
+            </div>
+
+                <div class="que-cont cont-4">
+
+                    <div class="que que-16">
+                        <h1> &nbsp;<span>Q16-</span> The SI unit of measuring work and energy is?</h1>
+                        <ul>
+                            <li><button onclick="right_selection(2)" value="2">Joule</button></li>
+                            <li><button onclick="wrong_selection()">Watt</button></li>
+                            <li><button onclick="wrong_selection()">Farad</button></li>
+                            <li><button onclick="wrong_selection()">Ohm</button></li>
+                        </ul>
+                    </div>
+    
+                    <div class="que que-17">
+                        <h1> &nbsp;<span>Q17-</span> Charle's Law is based on?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">Solid</button></li>
+                            <li><button onclick="wrong_selection()">Liquid</button></li>
+                            <li><button onclick="right_selection(360)" value="360">gas</button></li>
+                            <li><button onclick="wrong_selection()">none of the above</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-18">
+                        <h1> &nbsp;<span>Q18-</span> If the distance between Earth and moon doubles, then the gravitational &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;force?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">same</button></li>
+                            <li><button onclick="wrong_selection()">half</button></li>
+                            <li><button onclick="right_selection(110)" value="110">one-fourth</button></li>
+                            <li><button onclick="wrong_selection()">double</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-19">
+                        <h1> &nbsp;<span>Q19-</span> Which of the folloing is not a vector quantity?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">Acceleration</button></li>
+                            <li><button onclick="right_selection(195)" value="195">Density</button></li>
+                            <li><button onclick="wrong_selection()">Velocity</button></li>
+                            <li><button onclick="wrong_selection()">Impulse</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-20">
+                        <h1> &nbsp;<span>Q20-</span> Which one of the ave has the longest wavelength?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">Violet</button></li>
+                            <li><button onclick="wrong_selection()">Blue</button></li>
+                            <li><button onclick="wrong_selection()">Yellow</button></li>
+                            <li><button onclick="right_selection(4)" value="4">Red</button></li>
+                        </ul>
+                        <button class="fifth-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
+                    </div>
+    
+                </div>
+
+            </main>
+            
+            <div class="result-page">
+                <h1>your result is here</h1>
+                <ul>
+                    <li>Name: <span class="username"></span> </li>
+                    <li>id: <span class="userid"></span> </li>
+                    <li>total-que: <span>20</span> </li>
+                    <li>correct-que: <span class="correct_que"></span> </li>
+                    <li>wrong-que: <span class="wrong_que"></span> </li>
+                    <li>attempted-que: <span class="att_que"></span></li>
+                    <li>status: <span class="status"></span> </li>
+                </ul>
+                <b>Carrer paths best suited:</b>
+                <div>
+                	<p style="float: left;font-size: 20px;" id="career1"></p>
+                	<p style="text-align: center;font-size: 20px;" id="career2"></p>
+                	<p style="float: right; margin-top: -22px;font-size: 20px;" id="career3"></p>
+            	</div>
+            </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
